@@ -7,7 +7,10 @@ function App() {
 	const [result, setResult] = useState("");
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		if (username === "username" && password === "password") {
+		if (!username || !password) {
+			return;
+		}
+		if (username === "user" && password === "password") {
 			setResult("success");
 		} else {
 			setResult("failed");
