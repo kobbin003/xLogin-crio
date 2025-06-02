@@ -26,7 +26,7 @@ function App() {
 				<p>Welcome, user!</p>
 			) : (
 				<>
-					{result === "failed" && <p>InvalidUsername or password</p>}
+					{result === "failed" && <p>Invalid username or password</p>}
 					<form
 						onSubmit={handleSubmit}
 						style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
