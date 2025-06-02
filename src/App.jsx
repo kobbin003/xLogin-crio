@@ -34,8 +34,8 @@ function App() {
 						onSubmit={handleSubmit}
 						style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
 					>
-						<label htmlFor="username">
-							Username:&nbsp;
+						<div>
+							<label htmlFor="username">Username: </label>
 							<input
 								type="text"
 								name="username"
@@ -45,9 +45,9 @@ function App() {
 								required
 								onChange={handleUsernameChange}
 							/>
-						</label>
-						<label htmlFor="password">
-							Password:&nbsp;
+						</div>
+						<div>
+							<label htmlFor="password">Password: </label>
 							<input
 								type="text"
 								name="password"
@@ -57,7 +57,7 @@ function App() {
 								required
 								onChange={handlePasswordChange}
 							/>
-						</label>
+						</div>
 						<button type="submit" style={{ width: "fit-content" }}>
 							Submit
 						</button>
